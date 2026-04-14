@@ -42,6 +42,13 @@ docker run -d \
 * **Performance:** Reduced bandwidth consumption by preventing ad-media loads.
 * **Accessibility:** Centralized management via a web-based dashboard.
 
+## 🩺 Health Check & Monitoring
+The repository includes a Python utility to verify the system's operational status:
+- **Location:** `scripts/check_pihole.py`
+- **Functionality:** Validates WAN connectivity, Docker container state, and local DNS resolution.
+- **Usage:** `python3 scripts/check_pihole.py`
+  
+
 ## 💡 Lessons Learned
 * **IP Allocation:** Importance of DHCP reservations in mesh networks (eero) to prevent DNS "black holes."
 * **MacOS Constraints:** Managing sleep/power settings on a headless Mac Mini to ensure 24/7 service availability.
